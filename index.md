@@ -2,7 +2,7 @@
 layout: workshop      # DON'T CHANGE THIS.
 carpentry: "swc"    # what kind of Carpentry (must be either "lc" or "dc" or "swc")
 venue: "Woods Hole Oceanographic Institute"        # brief name of host site without address (e.g., "Euphoric State University")
-address: "Clark Lab, Woods Hole, MA 02543"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
+address: "WHOI Quissett Campus, 360 Woods Hole Rd., Woods Hole MA 02543"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
 country: "usa"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1)
 language: "en"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/ISO_639-1)
 latlng: "41.534597,-70.647926"       # decimal latitude and longitude of workshop venue (e.g., "41.7901128,-87.6007318" - use http://www.latlong.net/)
@@ -46,6 +46,8 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
 </iframe>
 {% endif %}
 
+<h4>This workshop is sponsored by a WHOI Technical Staff Award "Enhancing software development skills for better science in less time," led by <a href="http://www.whoi.edu/DoR/special-projects/ocean-informatics-working-group" target="_blank">WHOI's Ocean Informatics advisory group.</a></h4>
+
 <h2 id="general">General Information</h2>
 
 {% comment %}
@@ -88,10 +90,14 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
 <p id="where">
   <strong>Where:</strong>
   {{page.address}}.
-  Get directions with
+  <b>Get directions with
   <a href="//www.openstreetmap.org/?mlat={{page.latlng | replace:',','&mlon='}}&zoom=16">OpenStreetMap</a>
   or
-  <a href="//maps.google.com/maps?q={{page.latlng}}">Google Maps</a>.
+  <a href="//maps.google.com/maps?q={{page.latlng}}">Google Maps</a>.</b>
+</p>
+<p id="building">
+  <strong>Building and room:</strong>
+  Clark 5-07
 </p>
 {% endif %}
 
